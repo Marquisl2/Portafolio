@@ -1,0 +1,700 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------------------------------------------------------------INICIO-------------------------------------------------------------------*/
+#colorcito {
+  background-color: #000;
+}
+
+#inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("ImgPor/SVG/ingles-para-programadores.jpg");
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.flags {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flags__item {
+  width: 16px;
+  cursor: pointer;
+}
+
+#inicio .container header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+#inicio .container header .headerContainer {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#inicio .container header .headerContainer h1 {
+  text-align: center;
+  color: darkorchid;
+}
+
+#inicio .container header .headerContainer nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#inicio .container header .headerContainer nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 14px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+#inicio .container header .headerContainer nav ul li a:hover {
+  color: darkorchid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#inicio .container header .headerContainer .redes a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#inicio .container header .headerContainer .seleccionado {
+  color: darkorchid;
+}
+
+#inicio .container header .headerContainer .redes a:hover {
+  color: darkorchid;
+}
+
+#inicio .container .presentacion {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#inicio .container .presentacion h2 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#inicio .container .presentacion h2 b {
+  font-size: 55px;
+  color: darkorchid;
+}
+
+#inicio .container .presentacion .descripcion {
+  max-width: 700px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+#iconoNav {
+  color: #fff;
+  display: none;
+}
+
+/*-----------------------------------------------------------------SECCION SOBRE MI-----------------------------------------------------------*/
+
+#sobreMi {
+  background-color: #ffffff;
+  max-width: 1100px;
+  max-height: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  display: flex;
+}
+
+#sobreMi .imgContainer {
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+#sobreMi .imgContainer img {
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #202a33;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#sobreMi .sobreMi {
+  margin: 0 40px;
+}
+
+#sobreMi .sobreMi .seccionTitulo {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+#sobreMi .sobreMi h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+#sobreMi .sobreMi h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#sobreMi .sobreMi p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #3a3a4b;
+  margin-bottom: 12px;
+}
+
+#sobreMi .sobreMi a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #000;
+  border: 1px solid #000;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+#sobreMi .sobreMi a:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+/*-------------------------------------------------------------SECCION HABILIDADES--------------------------------------------------------------*/
+
+#habilidades {
+  padding: 100px 15px;
+  text-align: center;
+  background-color: black;
+}
+
+#habilidades .tituloTec {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #2e2828;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-thickness: 3px;
+}
+
+#habilidades .fila {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+#habilidades .fila .servicio {
+  max-width: 300px;
+  padding: 30px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: #fff;
+  border: 1px solid rgb(0, 0, 0);
+}
+#habilidades .fila .servicio:hover {
+  box-shadow: 5px 5px 10px #706d6d, -5px -5px 10px #8a8a8a;
+}
+
+#habilidades .fila .servicio h4 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#habilidades .fila .servicio .iconoCode {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #202a33;
+  padding: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 25px;
+}
+
+#habilidades .fila .servicio hr {
+  width: 30%;
+  margin: auto;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+#habilidades .fila .servicio ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#habilidades .fila .servicio p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/*-----------------------------------------------------------SECCION HABILIDADES--------------------------------------------------------------*/
+
+.tecno {
+  background: linear-gradient(rgba(39, 31, 31, 0.8), rgba(0, 0, 0, 0.7)),
+    url("ImgPor/SVG/computadoras.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 100vh;
+}
+
+.principal h1 {
+  justify-content: center;
+  color: #d3d3d3;
+  padding: 70px;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 3px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.principal img {
+  width: 90px;
+}
+
+.tecnologias1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  justify-content: center;
+  gap: 60px;
+  margin: 50px;
+}
+
+.tecnologias2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  justify-content: center;
+  gap: 60px;
+  margin: 50px;
+}
+
+.tecnologias1 .typescriptImg img {
+  height: 100px;
+  height: auto;
+}
+
+.tecnoPart h3 {
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 1.1rem;
+  width: 100px;
+  color: rgb(207, 207, 207);
+  opacity: 0;
+  transform: translate(0px, -10px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.tecnologias1 > div:hover h3 {
+  opacity: 1;
+  transform: translate(0px, -160px);
+}
+
+.tecnologias2 > div:hover h3 {
+  opacity: 1;
+  transform: translate(0px, -135px);
+}
+
+/*----------------------------------------------------------------SECCION PROYECTOS-----------------------------------------------------------*/
+
+#proyectos {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+
+#proyectos .tituloProyecto {
+  text-align: center;
+  justify-content: center;
+  font-size: 22px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-thickness: 3px;
+}
+
+#proyectos .fila {
+  align-items: center;
+  justify-content: center;
+}
+
+#proyectos .fila .proyecto {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloPro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid azure;
+}
+
+.tituloPro h3 {
+  display: flex;
+  color: #fff;
+  width: 200px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.tituloPro a {
+  display: flex;
+  position: relative;
+  left: 250px;
+  padding: 10px;
+}
+
+.proyecto img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/*-----------------------------------------------------------SECCION CONTACTO--------------------------------------------------------------*/
+
+#contacto {
+  padding: 100px 15px;
+  background-color: #000;
+}
+
+#contacto .tituloCon {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-thickness: 3px;
+}
+
+#contacto .formContainer {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#contacto .formContainer .fila {
+  margin-bottom: 15px;
+}
+
+#contacto .formContainer .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacto .formContainer input,
+#contacto .formContainer textarea {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#contacto .formContainer .midad input {
+  width: 48%;
+}
+
+#contacto .formContainer .input-full {
+  width: 100%;
+}
+
+#contacto .btn-enviar {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contacto .btn-enviar:hover {
+  background-color: darkorchid;
+  color: #fff;
+}
+
+/*----------------------------------------------------------SECCION RESPONSIVE-------------------------------------------------------------*/
+
+@media screen and (max-width: 843px) {
+  #inicio .container header .headerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40px;
+  }
+  .redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    position: relative;
+  }
+  nav {
+    display: none;
+    position: relative;
+  }
+  nav.responsive {
+    display: block;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+
+  .flags {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .flags__item {
+    width: 15px;
+    cursor: pointer;
+  }
+  #iconoNav {
+    display: flex;
+    width: 25px;
+  }
+  #inicio .container .presentacion h2 {
+    font-size: 20px;
+  }
+
+  #inicio .container .presentacion h2 b {
+    font-size: 20px;
+  }
+
+  #sobreMi {
+    padding: 50px 0;
+    display: block;
+  }
+  #sobreMi .imgContainer {
+    max-width: 400px;
+    margin: auto;
+  }
+  #sobreMi .imgContainer img {
+    width: 100%;
+    padding: 8px;
+  }
+  #sobreMi .sobreMi .seccionTitulo {
+    text-align: center;
+  }
+  #sobreMi .sobreMi h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #sobreMi .sobreMi h3 {
+    text-align: center;
+  }
+  #sobreMi .sobreMi p {
+    text-align: center;
+  }
+
+  #sobreMi .sobreMi a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #habilidades {
+    padding: 50px 15px;
+  }
+
+  #habilidades .fila {
+    display: block;
+    margin: 15px;
+  }
+
+  #habilidades .fila .servicio {
+    margin: 15px auto;
+  }
+
+  .tecno {
+    height: 100%;
+  }
+
+  .principal h1 {
+    justify-content: center;
+    padding: 60px;
+  }
+
+  .principal img {
+    width: 45px;
+  }
+
+  .tecnologias1 {
+    padding: 0;
+    margin: 50px 2px;
+    gap: 2px;
+  }
+
+  .tecnologias2 {
+    padding: 0;
+    margin: 50px 2px;
+    gap: 2px;
+  }
+
+  .tecno {
+    height: 100vh;
+  }
+
+  .tecnoPart h3 {
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    width: 100px;
+    color: rgb(207, 207, 207);
+    opacity: 0;
+    transform: translate(0px, -10px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .tecnologias1 > div:hover h3 {
+    opacity: 1;
+    transform: translate(0px, -100px);
+  }
+
+  .tecnologias2 > div:hover h3 {
+    opacity: 1;
+    transform: translate(0px, -100px);
+  }
+  #proyectos {
+    padding: 50px 0;
+  }
+
+  #proyectos .fila {
+    display: block;
+    text-align: center;
+  }
+
+  #proyectos .fila .proyecto {
+    margin: 5px auto;
+  }
+
+  #proyectos .fila .proyecto {
+    margin-bottom: 40px;
+    max-width: 450px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  #contacto {
+    padding: 50px 15px;
+  }
+  #contacto .formContainer .mitad {
+    margin-bottom: 15px;
+    display: block;
+  }
+  #contacto .formContainer .mitad input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .tituloPro a {
+    display: flex;
+    position: relative;
+    left: 160px;
+  }
+
+  .proyecto img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 843px) {
+  .tecno {
+    height: 135vh;
+  }
+  .tecno h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
